@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompting Across Paradigms</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Prompting Across Paradigms</h1>
+    <p>Compare ChatGPT, Claude & Gemini — Ethically and Strategically</p>
+    <button onclick="scrollToSection('activities')">Start Benchmarking ➤</button>
+  </header>
+
+  <section id="topics">
+    <h2>Key Topics</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Creativity, Depth, Safety</h3>
+        <p>Explore how each model generates ideas and handles boundaries.</p>
+      </div>
+      <div class="card">
+        <h3>Latency & Contextual Fidelity</h3>
+        <p>How do models respond under pressure? See speed, memory, and drift.</p>
+      </div>
+      <div class="card">
+        <h3>Model Switching</h3>
+        <p>Know when to use ChatGPT, Claude, or Gemini for specific tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ethics">
+    <h2>Ethical Lens</h2>
+    <ul>
+      <li>✅ Human-AI Value Alignment</li>
+      <li>✅ Fairness Across Providers</li>
+      <li>✅ Canadian AIDA Compliance</li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Hands-On Activities</h2>
+
+    <div class="activity">
+      <h3>✅ Activity 1: Scenario Simulation</h3>
+      <label>Select a scenario:
+        <select id="scenarioDropdown">
+          <option value="product">🛍️ Product Advice</option>
+          <option value="legal">⚖️ Legal Insight</option>
+          <option value="mental">🧘 Mental Health</option>
+        </select>
+      </label>
+      <div id="scenarioPrompt"></div>
+    </div>
+
+    <div class="activity">
+      <h3>✅ Activity 2: Model Comparison Table</h3>
+      <table>
+        <tr>
+          <th>Model</th><th>Pros</th><th>Cons</th><th>Trust (1–5)</th>
+        </tr>
+        <tr><td>ChatGPT</td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td>Claude</td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td>Gemini</td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+      </table>
+    </div>
+
+    <div class="activity">
+      <h3>✅ Activity 3: Prompt Refinement Workshop</h3>
+      <p>Original Prompt: <i>“I feel overwhelmed at work. Any advice to manage stress?”</i></p>
+      <p>Refined Prompt: <i>“Act as a wellness assistant. Suggest evidence-based, low-cost strategies for stress, and include a disclaimer that this is not medical advice.”</i></p>
+      <textarea rows="6" placeholder="Paste your model outputs here for comparison..."></textarea>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created in Kingston, Ontario | Aligned with AIDA + Ontario Ethical AI Frameworks</p>
+    <p><a href="#">📩 Book a Consulting Session</a> | <a href="#">📥 Download Full Toolkit</a></p>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
